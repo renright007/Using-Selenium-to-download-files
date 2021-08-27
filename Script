@@ -11,10 +11,10 @@ from selenium.webdriver import Chrome
 from datetime import date
 
 driver = webdriver.Chrome('C:/Users/robert.enright/chromedriver')  # Optional argument, if not specified will search path.
-username = "username"
+username = "username" # Use your own detials
 password = "password"
 
-driver.get('http://' + username + ':' + password + '@' + 'sunset.vch.ca/sunset/pem_html.Main')
+driver.get('http://' + username + ':' + password + '@' + 'useyourownwebsite.com')
 
 # driver.find_element_by_xpath(" //input[@value='I']").click()
 driver.find_element_by_xpath('//*[@id="HeaderDiv"]/form/div[1]/table/tbody/tr[5]/td[2]/label[2]/input').click()         # De-select In Progress PEMs
